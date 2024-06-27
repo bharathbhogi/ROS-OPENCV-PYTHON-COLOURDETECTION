@@ -1,0 +1,21 @@
+<launch>
+  <node
+    pkg="beginner_tutorials"
+    type="talker.py"
+    name="webcam_pub"
+    output="screen"
+  />
+  <node
+    pkg="beginner_tutorials"
+    type="img_changer.py"
+    name="webcam_change"
+    output="screen"
+  />
+  />
+  <node
+    pkg="beginner_tutorials"
+    type="listener.py"
+    name="webcam_sub"
+    output="screen"
+  />
+</launch>
